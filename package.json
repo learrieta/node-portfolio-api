@@ -3,7 +3,7 @@
     "version": "24.1.1",
     "description": "This project is a demonstration on how to route express controllers using Typescript ",
     "main": "src/server.ts",
-    "type": "module",
+    
     "scripts": {
         "build": "tsc",
         "test": "jest --config jest.config.ts --detectOpenHandles --coverage --maxWorkers=1"

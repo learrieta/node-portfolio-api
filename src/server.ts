@@ -1,4 +1,4 @@
-
+import http from 'http';
 import express from 'express';
 import './config/logging';
 import firebaseAdmin from 'firebase-admin'
@@ -9,7 +9,6 @@ import { routeNotFound } from './middleware/routeNotFound';
 import { server } from './config/config';
 import { sequelize } from './config/db';
 import userRouter from './routes/info';
-import  http  from 'http'
 
 
 
