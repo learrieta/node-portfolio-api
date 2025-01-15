@@ -6,7 +6,7 @@
     "scripts": {
         "build": "tsc",
         "test": "jest --config jest.config.ts --detectOpenHandles --coverage --maxWorkers=1",
-        "dev": "tsx watch src/server.ts"
+        "dev": "tsx src/server.ts"
     },
     "keywords": [
         "typescript",
@@ -20,6 +20,7 @@
         "@types/jest": "^29.5.5",
         "@types/node": "^20.10.6",
         "@types/supertest": "^6.0.2",
+        "eslint": "^9.18.0",
         "jest": "^29.7.0",
         "supertest": "^6.3.3",
         "ts-jest": "^29.1.1",
