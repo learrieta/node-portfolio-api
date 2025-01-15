@@ -1,7 +1,7 @@
 import http from 'http';
 import express from 'express';
 import './config/logging';
-import firebaseAdmin from 'firebase-admin'
+
 
 import { corsHandler } from './middleware/corsHandler';
 import { loggingHandler } from './middleware/loggingHandler';
@@ -16,11 +16,7 @@ import userRouter from './routes/info';
 export const application = express();
 export let httpServer: ReturnType<typeof http.createServer>;
 
-/*CONNECTING TO FIREBASE ADMIN*/
-let serviceAccountKey = require('./config/serviceAccountKey.json');
-firebaseAdmin.initializeApp({
-    credential: firebaseAdmin.credential.cert(serviceAccountKey)
-})
+
 
 
 /*CONNECTING TO POSTGRESS*/
