@@ -1,6 +1,9 @@
-import http from 'http';
-import express from 'express';
+
+
 import './config/logging';
+
+const http  = require('http')
+const express = require('express')
 
 
 import { corsHandler } from './middleware/corsHandler';
@@ -51,7 +54,7 @@ export const Main = () => {
     logging.log('----------------------------------------');
     logging.log('Define Controller Routing');
     logging.log('----------------------------------------');
-    application.get('/main/healthcheck', (req, res, next) => {
+    application.get('/main/healthcheck', (_req: any, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { hello: string; }): any; new(): any; }; }; }, _next: any) => {
         return res.status(200).json({ hello: 'world!' });
     });
 
